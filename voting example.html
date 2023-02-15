@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Online Voting System</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 500px;
+            margin: 60px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .candidates {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .candidate {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+        .candidate img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .candidate p {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        #submit {
+            background-color: #337ab7;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            border: 0;
+            margin-top: 20px;
+        }
+        #submit:hover {
+            background-color: #286090;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Online Voting System</h2>
+        <p>Please select the candidate you want to vote for.</p>
+        <form method="post" action="vote.php">
+            <div class="candidates">
+                <div class="candidate">
+                    <input type="radio" name="candidate" value="1" required>
+                    <img src="candidate1.png" alt="Candidate 1">
+                    <p>Candidate 1</p>
+                </div>
+                <div class="candidate">
+                    <input type="radio" name="candidate" value="2" required>
+                    <img src="candidate2.png" alt="Candidate 2">
+                    <p>Candidate 2</p>
+                </div>
+                <div class="candidate">
+                    <input type="radio" name="candidate" value="3" required>
+                    <img src="candidate3.png" alt="Candidate 3">
+                    <p>Candidate 3</p>
+                </div>
+            </div>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+    <script>
+        document.querySelector('form').onsubmit = function(e) {
+            e.preventDefault();
+            alert("Your vote has been cast! Thank you for voting.");
+            this.submit();
+        }
+    </script>
+</body>
+</html>

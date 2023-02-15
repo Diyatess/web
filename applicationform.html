@@ -1,0 +1,61 @@
+<html>
+<head><link rel="stylesheet" href="styles.css">
+
+<script>
+	function validatereg()
+	{
+		var a= document.regform.fname.value;
+		var b= document.regform.Lname.value;
+		if(a==" "|| !isNaN(a))
+		{
+			alert("Please enter a valid First name..")
+		}
+		else if(b==" "|| !isNaN(b))
+		{
+			alert("Please enter a valid last name..")
+		}
+	}
+
+</script>
+</head>
+<body style="background-color:rgba(210, 156, 239, 0.729);" >
+
+<form method="post" name="regform" onsubmit="validatereg()"  class="container">
+	<h1 align="center" ><br>APPLICATION FORM</h1>
+	
+	 
+		<label>FRIST NAME:</label>
+		<input type="text" name='fname'><br><br>
+	<label>LAST NAME:</label>
+		<input type="text" name='Lname'><br><br>
+	<label>EMAIL:</label>
+	    <input type="email" name='mail'><br><br>
+	<label>PASSWORD:</label>
+		<input type="password" name='password'><br><br>
+	<label>GENDER:</label>
+		<input type="RADIO" name='gender' value="female">female
+			<input type="RADIO" name='gender' value="male">male
+			<input type="RADIO" name='gender' value="oth">others<br><br>
+	<label>MOBILE NO:</label>
+		<input type="text" name='NO'><br><br>
+	
+
+
+	<label> UNIVERSIY:</label>
+	<select name=uni>
+		<option>MG UNIVERSITY</option>
+		<option>KERALA UNIVERSITY</option>
+		<option>KTU </option>
+		<option>CALICUT UNIVERSITY</option>
+		</select><br><br>
+	<label>LANGUAGES:</label>
+		<input type="checkbox" name='choice' >JAVA
+		<input type="checkbox" name='choice'>CS<br><br>
+		
+	<input type="submit" name="submit">
+	
+	
+</form>
+
+</body>
+</html>

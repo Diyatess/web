@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel='stylesheet'  href='style.css'>
+    <style>
+        .banner-container{
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,rgba(181, 5, 5, 0.849),rgb(3,96,133));
+    display: flex;
+   }
+
+    </style>
+</head>
+
+<body style="margin: 0;">
+    <header>
+        <div class="container">
+            <a href="#">LOGO</a>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner-container">
+            <div class="container">
+                <div class="left-section">
+                    <h1>WELCOME</h1>
+                    <p>It's nice to see you again. Login to continue to your account</p>
+                    <button>Login</button>
+                </div>
+                <div class="right-section">
+                    <h4>Please fill the form</h4>
+                    <form action="">
+                        <div class="input_group">
+                            <input type="text" id="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input_group">
+                            <input type="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input_group">
+                            <input type="password" id="password">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="submit-section">
+                          <input type="submit" class="submit-button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
